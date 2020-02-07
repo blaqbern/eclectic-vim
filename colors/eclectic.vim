@@ -101,7 +101,7 @@ call s:create_highlight("LineNr", { "fg": s:foreground_alt, "bg": s:bg_dark })
 call s:create_highlight("SpecialKey", { "fg": s:invisibles })
 call s:create_highlight("CursorLine", { "bg": s:background })
 call s:create_highlight("CursorLineNr", { "fg": s:accent_2, "bg": s:background })
-hi! linke VertSplit CursorLineNr
+call s:create_highlight("VertSplit", { "fg": s:accent_2_alt, "bg": s:background })
 hi! link WildMenu     IncSearch
 hi! link FoldColumn   SignColumn
 hi! link WarningMsg   ErrorMsg
