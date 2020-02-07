@@ -98,8 +98,9 @@ call s:create_highlight("DiffChange", { "bg": s:git_modified })
 call s:create_highlight("DiffDelete", { "fg": s:git_removed })
 call s:create_highlight("DiffText", { "bg": s:git_renamed })
 call s:create_highlight("LineNr", { "fg": s:foreground_alt, "bg": s:bg_dark })
-call s:create_highlight("CursorLineNr", { "fg": s:string_alt, "bg": s:background })
 call s:create_highlight("SpecialKey", { "fg": s:invisibles })
+call s:create_highlight("CursorLine", { "bg": s:background })
+hi! link CursorLineNr CursorLine
 hi! link WildMenu     IncSearch
 hi! link FoldColumn   SignColumn
 hi! link WarningMsg   ErrorMsg
