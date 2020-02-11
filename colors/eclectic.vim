@@ -15,7 +15,7 @@ let s:barely_darker_gray = "#34373c"
 let s:darker_gray = "#2a2d30"
 let s:lighter_gray = "#42464c"
 let s:soft_gray = "#61666f"
-let s:chalk = '#d9dec3'
+let s:chalk = "#d9dec3"
 let s:nightshade = "#4b4a53"
 let s:cyan = "#81c7be"
 let s:super_cyan = "49ffe8"
@@ -122,6 +122,8 @@ call s:create_highlight("MoreMsg", { "fg": s:info })
 hi! link Question MoreMsg
 hi! link ModeMsg MoreMsg
 
+call s:create_highlight("QfError", { "fg": s:alert, "bg": s:bg_dark })
+
 call s:create_highlight("DiffAdd", { "bg": s:success })
 call s:create_highlight("DiffChange", { "bg": s:warning })
 call s:create_highlight("DiffDelete", { "fg": s:alert })
@@ -189,7 +191,6 @@ hi! link TypescriptObjectLabel Operator
 hi! link TypescriptObjectLiteral Normal
 hi! link TypescriptTry Number
 hi! link TypescriptExceptions TypescriptTry
-hi! link TypescriptParenExp ErrorMsg
 " }}}
 
 " ALE {{{
