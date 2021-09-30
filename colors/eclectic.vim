@@ -114,6 +114,7 @@ call s:create_highlight("Folded", { "fg": s:accent_2, "bg": s:bg_barely_darker }
 call s:create_highlight("FoldColumn", { "fg": s:accent_2,"bg": s:bg_dark })
 " call s:create_highlight("SignColumn", { "fg": s:orange,"bg": s:red })
 hi! link TabLineFill StatusLineNC
+hi! link SignColumn LineNr
 
 call s:create_highlight("Title", { "fg": s:accent_3, "gui": "bold" })
 call s:create_highlight("ErrorMsg", { "fg": s:alert })
